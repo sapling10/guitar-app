@@ -14,10 +14,18 @@ export default function Tuner({ navigation }) {
     return (
         <View style={styles.nav}>
             <View style={styles.tuningNav}>
-                <Button title='Tuning' onPress={TuningPress}/>
+                <Button 
+                    title='Tuning' 
+                    onPress={TuningPress}
+                    color='green'
+                />
             </View>
             <View style={styles.settingsNav}>
-                <Button title='Settings' onPress={SettingsPress}/>
+                <Button 
+                    title='Settings' 
+                    onPress={SettingsPress}
+                    color='green'
+                />
             </View>
         </View>
     )
@@ -25,15 +33,17 @@ export default function Tuner({ navigation }) {
 
 const styles = StyleSheet.create({
     nav: {
-        marginTop: 600
+        marginTop: 640,
+        paddingHorizontal: 10,
+        marginHorizontal: 80,
+        flexDirection: 'row',
     },
 
     tuningNav: {
-        paddingHorizontal: 15,
-        paddingBottom: 10
+        paddingRight: 20
     },
 
     settingsNav: {
-        paddingHorizontal: 15
+        paddingLeft: 20
     }
 });
