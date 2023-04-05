@@ -1,0 +1,49 @@
+----------------------------------------------------------
+components:
+    tuner
+        - change instrument
+        - change Hz?
+        - Red to green display
+    songwriting notebook
+        - save pages (songs)
+        - record audio
+        - minor audio processing
+        - export notes
+    chord/scale/triad charts
+        - general info page
+    tab generator
+        - generate tabs with line spacing
+    *fretboard display*
+----------------------------------------------------------
+fretboard display:
+    overall we want,
+        - change between notes and fingerings
+        - bending notes
+        - show the scale(s) behind the song
+        - custom color/design
+        - detect non standard tuning?
+    start with minimum cababilities,
+        - we need to process and audio file,
+          later we need an API or to make a
+          way to import audio, (manual, spotify, youtube)
+        - after getting that information we need
+          to isolate the guitar, to start I think
+          I should ignore that and just send in raw guitar
+        - take that guitar and turn it into some datatype
+          to store the notes that were played, if not
+          storing than we should run in real time,
+          play the song without audio and compute
+          directly from the audio
+        - display what notes are being played on the
+          fretboard, which should be storing the fretboard
+          as some type of data type
+        - Place and remove dots on the respective places
+          on the neck
+----------------------------------------------------------
+questions:
+    APIs?
+        - what
+        - can I recreated it?
+
+    overall displaying of the fretboard
+----------------------------------------------------------
